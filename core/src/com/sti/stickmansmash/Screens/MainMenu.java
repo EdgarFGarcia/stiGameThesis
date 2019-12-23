@@ -23,6 +23,10 @@ public class MainMenu implements Screen {
         // set screen size
         stage.setViewport(new ExtendViewport (1920, 1080));
 
+        bg = new Image(Assets.menu[7]);
+        bg.setFillParent(true);
+        stage.addActor(bg);
+
         nextBtn = new Image(Assets.menu[5]);
         nextBtn.setPosition(810.0f, 315.0f );
         nextBtn.setScale(0.50f);
@@ -40,13 +44,6 @@ public class MainMenu implements Screen {
         settings.setScale(0.25f);
 
         stage.addActor(settings);
-
-
-//        backBtn = new Image(Assets.menu[0]);
-//        backBtn.setScale(0.25f);
-////          backBtn.setPosition(,  );
-//        backBtn.setPosition(0 , 800);
-//        stage.addActor(backBtn);
 
         // get user touch on screen
         Gdx.input.setInputProcessor(stage);

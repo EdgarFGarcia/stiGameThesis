@@ -1,0 +1,33 @@
+texturemain.png
+size: 854, 660
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+background
+  rotate: false
+  xy: 0, 180
+  size: 854, 480
+  orig: 854, 480
+  offset: 0, 0
+  index: -1
+music
+  rotate: false
+  xy: 126, 0
+  size: 126, 126
+  orig: 126, 126
+  offset: 0, 0
+  index: -1
+nextBtn
+  rotate: false
+  xy: 252, 0
+  size: 575, 180
+  orig: 575, 180
+  offset: 0, 0
+  index: -1
+sounds
+  rotate: false
+  xy: 0, 0
+  size: 126, 126
+  orig: 126, 126
+  offset: 0, 0
+  index: -1

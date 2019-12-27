@@ -8,16 +8,14 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Assets {
 
     private static final AssetManager mg = new AssetManager();
-    private static final String Assets = "Images/smash.txt";
     private static TextureAtlas atlas;
+    private static final String Assets = "smashbros.atlas";
 
-    public static TextureRegion[] menu = new TextureRegion[8];
+    public static TextureRegion[] menu = new TextureRegion[7];
 
     public static AssetManager getMg() {
         return mg;
     }
-
-
 
     public static void load(){
         mg.load(Assets, TextureAtlas.class);
@@ -25,7 +23,7 @@ public class Assets {
     }
 
     private static void loadMenu(){
-        for(int i = 0; i < 8; i++){
+        for(int i = 0; i < 7; i++){
             menu[i] = getAtlas().findRegion(Constants.menu[i]);
         }
     }
@@ -34,6 +32,7 @@ public class Assets {
         if(atlas == null)
             atlas = new TextureAtlas(Gdx.files.internal(Assets));
         return atlas;
+
     }
 
 }

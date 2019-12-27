@@ -15,7 +15,7 @@ public class MainMenu implements Screen {
 
     private Stage stage = new Stage();
 
-    private Image bg, nextBtn, backBtn, settings;
+    private Image bg, playBtn, settingsBtn;
 
     @Override
     public void show() {
@@ -23,31 +23,26 @@ public class MainMenu implements Screen {
         // set screen size
         stage.setViewport(new ExtendViewport (1920, 1080));
 
-        bg = new Image(Assets.menu[7]);
+        bg = new Image(Assets.menu[1]);
         bg.setFillParent(true);
         stage.addActor(bg);
 
-        nextBtn = new Image(Assets.menu[5]);
-        nextBtn.setPosition(810.0f, 315.0f );
-        nextBtn.setScale(0.50f);
-        nextBtn.addListener(new ClickListener(){
+        playBtn = new Image(Assets.menu[5]);
+        playBtn.setPosition(747.50f, 284.0f);
+        playBtn.addListener(new ClickListener(){
             @Override
             public void clicked(InputEvent event, float x, float y){
                 ((Game) Gdx.app.getApplicationListener()).setScreen(new GameScreen());
-//                System.out.println("test");
             }
         });
-        stage.addActor(nextBtn);
+        stage.addActor(playBtn);
 
-        settings = new Image(Assets.menu[6]);
-        settings.setPosition(50.0f , 1080.0f + 120.0f);
-        settings.setScale(0.25f);
-
-        stage.addActor(settings);
+        settingsBtn = new Image(Assets.menu[6]);
+        settingsBtn.setPosition(0.0f, 1016.0f);
+        stage.addActor(settingsBtn);
 
         // get user touch on screen
         Gdx.input.setInputProcessor(stage);
-
 
     }
 

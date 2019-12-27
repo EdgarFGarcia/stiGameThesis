@@ -1,0 +1,55 @@
+
+smashbros.png
+size: 2048,2048
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+back
+  rotate: false
+  xy: 2, 129
+  size: 425, 125
+  orig: 425, 125
+  offset: 0, 0
+  index: -1
+bg
+  rotate: false
+  xy: 2, 383
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+musicoff
+  rotate: false
+  xy: 429, 256
+  size: 425, 125
+  orig: 425, 125
+  offset: 0, 0
+  index: -1
+musicon
+  rotate: false
+  xy: 2, 256
+  size: 425, 125
+  orig: 425, 125
+  offset: 0, 0
+  index: -1
+pause
+  rotate: false
+  xy: 856, 256
+  size: 425, 125
+  orig: 425, 125
+  offset: 0, 0
+  index: -1
+play
+  rotate: false
+  xy: 429, 129
+  size: 425, 125
+  orig: 425, 125
+  offset: 0, 0
+  index: -1
+settingss
+  rotate: false
+  xy: 2, 2
+  size: 425, 125
+  orig: 425, 125
+  offset: 0, 0
+  index: -1

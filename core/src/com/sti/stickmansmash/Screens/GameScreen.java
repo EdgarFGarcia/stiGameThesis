@@ -15,7 +15,7 @@ public class GameScreen implements Screen {
 
     private OrthographicCamera camera;
     private Stage stage = new Stage();
-    private Image backBtn;
+    private Image backBtn, caveOne, caveTwo, caveThree, playArea;
 
     @Override
     public void show() {
@@ -24,8 +24,14 @@ public class GameScreen implements Screen {
         float h = Gdx.graphics.getHeight();
 
         camera = new OrthographicCamera();
-        camera.setToOrtho(false, w / 2, h / 2);
+        camera.setToOrtho(false, 1920, 1080);
 
+        caveOne = new Image(Assets.menu[9]);
+        caveOne.setOriginX(250.0f);
+        stage.addActor(caveOne);
+
+        caveTwo = new Image(Assets.menu[7]);
+        stage.addActor(caveTwo);
 
         backBtn = new Image(Assets.menu[0]);
         backBtn.setPosition(0.0f, 916.0f);
@@ -36,6 +42,10 @@ public class GameScreen implements Screen {
             }
         });
         stage.addActor(backBtn);
+
+        playArea = new Image(Assets.menu[8]);
+        playArea.setY(-180.0f);
+        stage.addActor(playArea);
 
         // get user touch on screen
         Gdx.input.setInputProcessor(stage);

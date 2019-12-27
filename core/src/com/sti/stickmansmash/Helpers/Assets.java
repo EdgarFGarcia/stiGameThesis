@@ -11,7 +11,7 @@ public class Assets {
     private static TextureAtlas atlas;
     private static final String Assets = "smashbros.atlas";
 
-    public static TextureRegion[] menu = new TextureRegion[7];
+    public static TextureRegion[] menu = new TextureRegion[11];
 
     public static AssetManager getMg() {
         return mg;
@@ -23,7 +23,7 @@ public class Assets {
     }
 
     private static void loadMenu(){
-        for(int i = 0; i < 7; i++){
+        for(int i = 0; i < 11; i++){
             menu[i] = getAtlas().findRegion(Constants.menu[i]);
         }
     }
